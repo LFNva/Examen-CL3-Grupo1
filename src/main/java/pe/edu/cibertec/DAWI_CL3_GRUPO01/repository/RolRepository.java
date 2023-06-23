@@ -9,5 +9,7 @@ import pe.edu.cibertec.DAWI_CL3_GRUPO01.model.bd.Rol;
 
 @Repository
 public interface RolRepository extends JpaRepository<Rol, Integer> {
+	
+	Rol findByNomrol(String rolname);
 
 }
